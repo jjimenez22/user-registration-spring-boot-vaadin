@@ -10,11 +10,11 @@ public class User {
     @GeneratedValue
     private Long id;
 
-    private String fullName;
+    private String firstName;
+
+    private String lastName;
 
     private String email;
-
-    private String password;
 
     public User() {
     }
@@ -27,12 +27,20 @@ public class User {
         this.id = id;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFirstName(String fullName) {
+        this.firstName = fullName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -43,11 +51,4 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
